@@ -1,6 +1,6 @@
 # TERROR ALARM - Predictive Analytics AI for Social Media and MSM
 
-Terror Alarm is a near AGI designed to analyze posts from social media using Decision Tree-based predictive analytics. Developed and owned by Terror Alarm NGO.
+Terror Alarm is a near AGI designed to analyze posts from social media and mainstream media (and other sources) using Decision Tree-based predictive analytics. Developed and owned by Terror Alarm NGO.
 
 ## Overview
 
