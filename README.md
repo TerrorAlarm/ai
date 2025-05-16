@@ -4,7 +4,7 @@ Terror Alarm is a near AGI designed to analyze posts from social media using Dec
 
 ## Overview
 
-Terror Alarm is a closed-source predictive analytics library built in Python. It uses Decision Trees to analyze posts from social media and make predictions based on the content and metadata of these posts.
+Terror Alarm is a private predictive analytics library built in Python. It uses Decision Trees to analyze posts from social and mainstream media and make predictions based on the content and metadata of these posts.
 
 Key features:
 - Data collection from X and other platforms
