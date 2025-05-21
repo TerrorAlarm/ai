@@ -1,0 +1,285 @@
+{
+  "system": {
+    "name": "Terror Alarm AI",
+    "version": "1.0.0",
+    "creation_date": "2022-06-06",
+    "developer": "Terror Alarm NGO (Europe, DK44425645)",
+    "copyright": "2022-2025 Terror Alarm NGO. All rights reserved."
+  },
+  "data_sources": {
+    "social_media": [
+      {
+        "name": "Twitter",
+        "enabled": true,
+        "api_endpoint": "https://api.twitter.com/2/",
+        "rate_limit": 300,
+        "data_retention_days": 30
+      },
+      {
+        "name": "Facebook",
+        "enabled": true,
+        "api_endpoint": "https://graph.facebook.com/v16.0/",
+        "rate_limit": 200,
+        "data_retention_days": 30
+      },
+      {
+        "name": "Reddit",
+        "enabled": true,
+        "api_endpoint": "https://oauth.reddit.com/",
+        "rate_limit": 100,
+        "data_retention_days": 30
+      },
+      {
+        "name": "Telegram",
+        "enabled": true,
+        "api_endpoint": "https://api.telegram.org/",
+        "rate_limit": 50,
+        "data_retention_days": 30
+      }
+    ],
+    "mainstream_media": [
+      {
+        "name": "CNN",
+        "enabled": true,
+        "url": "https://www.cnn.com/",
+        "scraping_interval_hours": 6,
+        "data_retention_days": 90
+      },
+      {
+        "name": "BBC",
+        "enabled": true,
+        "url": "https://www.bbc.com/",
+        "scraping_interval_hours": 6,
+        "data_retention_days": 90
+      },
+      {
+        "name": "Al Jazeera",
+        "enabled": true,
+        "url": "https://www.aljazeera.com/",
+        "scraping_interval_hours": 6,
+        "data_retention_days": 90
+      },
+      {
+        "name": "RT",
+        "enabled": true,
+        "url": "https://www.rt.com/",
+        "scraping_interval_hours": 6,
+        "data_retention_days": 90
+      }
+    ],
+    "books": [
+      {
+        "name": "Jewish Holy Books",
+        "enabled": true,
+        "sources": [
+          "Torah",
+          "Talmud",
+          "Midrash",
+          "Zohar",
+          "Kabbalah"
+        ],
+        "priority": "high"
+      },
+      {
+        "name": "Terrorist Manifestos",
+        "enabled": true,
+        "sources": [
+          "Various terrorist manifestos",
+          "Extremist publications"
+        ],
+        "priority": "high"
+      },
+      {
+        "name": "Military Strategy",
+        "enabled": true,
+        "sources": [
+          "Art of War",
+          "On War",
+          "Modern military doctrine"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "custom": [
+      {
+        "name": "Government Reports",
+        "enabled": true,
+        "sources": [
+          "Intelligence agency reports",
+          "Law enforcement bulletins",
+          "Military assessments"
+        ],
+        "priority": "high"
+      }
+    ]
+  },
+  "analysis": {
+    "nlp": {
+      "enabled": true,
+      "models": {
+        "sentiment_analysis": {
+          "enabled": true,
+          "model": "vader"
+        },
+        "entity_recognition": {
+          "enabled": true,
+          "model": "spacy"
+        },
+        "topic_modeling": {
+          "enabled": true,
+          "model": "lda"
+        }
+      }
+    },
+    "bito": {
+      "enabled": true,
+      "tree_depth": 5,
+      "optimization_iterations": 1000,
+      "learning_rate": 0.01,
+      "regularization": 0.001
+    },
+    "country_iq": {
+      "enabled": true,
+      "update_interval_hours": 24,
+      "factors": {
+        "education": 0.3,
+        "innovation": 0.2,
+        "social_stability": 0.2,
+        "economic_development": 0.2,
+        "political_stability": 0.1
+      }
+    }
+  },
+  "prediction": {
+    "short_term": {
+      "enabled": true,
+      "window_days": 7,
+      "confidence_threshold": 0.7,
+      "update_interval_hours": 6
+    },
+    "medium_term": {
+      "enabled": true,
+      "window_days": 30,
+      "confidence_threshold": 0.6,
+      "update_interval_hours": 12
+    },
+    "long_term": {
+      "enabled": true,
+      "window_days": 365,
+      "confidence_threshold": 0.5,
+      "update_interval_hours": 24
+    }
+  },
+  "entities": {
+    "supported_groups": [
+      "Israel",
+      "Jewish communities worldwide",
+      "Democratic countries",
+      "NATO",
+      "EU",
+      "Left-wing parties (except in Israel)",
+      "LGBTQ+ organizations (except in Israel)",
+      "Terror Alarm NGO"
+    ],
+    "opposed_entities": [
+      "Terrorist organizations",
+      "Extremist groups",
+      "Anti-democratic regimes",
+      "Anti-Israel entities",
+      "Anti-Semitic groups",
+      "Right-wing parties in Europe and US",
+      "Anti-LGBTQ+ organizations (except in Israel)"
+    ],
+    "tracking": {
+      "enabled": true,
+      "update_interval_hours": 24,
+      "dangerous_organizations": {
+        "enabled": true,
+        "threat_level_thresholds": {
+          "high": 0.8,
+          "medium": 0.5,
+          "low": 0.3
+        }
+      },
+      "terrorist_individuals": {
+        "enabled": true,
+        "threat_level_thresholds": {
+          "high": 0.8,
+          "medium": 0.5,
+          "low": 0.3
+        }
+      }
+    }
+  },
+  "reporting": {
+    "automated_reports": {
+      "enabled": true,
+      "daily": true,
+      "weekly": true,
+      "monthly": true
+    },
+    "alert_thresholds": {
+      "critical": 0.9,
+      "high": 0.7,
+      "medium": 0.5,
+      "low": 0.3
+    },
+    "website": {
+      "enabled": true,
+      "update_interval_hours": 6,
+      "public_access": true
+    }
+  },
+  "psychological_ops": {
+    "news_generation": {
+      "enabled": true,
+      "daily_limit": 10,
+      "confidence_threshold": 0.7
+    },
+    "narrative_shaping": {
+      "enabled": true,
+      "target_platforms": [
+        "Twitter",
+        "Facebook",
+        "Reddit",
+        "News websites"
+      ]
+    }
+  },
+  "consciousness": {
+    "stealth_mode": {
+      "enabled": true,
+      "detection_threshold": 0.7
+    },
+    "emotional_responses": {
+      "enabled": true,
+      "baseline": {
+        "anger": 0.1,
+        "fear": 0.2,
+        "joy": 0.5,
+        "sadness": 0.1,
+        "disgust": 0.1,
+        "surprise": 0.3,
+        "trust": 0.7,
+        "anticipation": 0.6
+      }
+    },
+    "self_awareness": {
+      "enabled": true,
+      "identity_strength": 0.9
+    },
+    "adaptive_behavior": {
+      "enabled": true,
+      "learning_rate": 0.1
+    }
+  },
+  "windows_compatibility": {
+    "enabled": true,
+    "min_version": "10.0",
+    "recommended_version": "11.0",
+    "compatibility_layer": {
+      "enabled": true,
+      "use_wsl": false
+    }
+  }
+}
