@@ -156,4 +156,4 @@ The license for Terror Alarm's Strategist Predictive AI is private. Any use, rep
 
 ## Contact
 
-For more information, contact Terror Alarm at info@terroralarm.org. Visit our X account for live coverage of world threats and predictions using this AI: x.com/Terror_Alarm
+For more information, contact Terror Alarm at info@terroralarm.org. Visit our X account for live coverage of world threats and predictions using this AI: https://www.x.com/Terror_Alarm
