@@ -1,8 +1,6 @@
-# ai
-# TERROR ALARM - Predictive Analytics AI
-# Short Description: Terror Alarm is a cutting-edge, AI-driven platform developed by Terror Alarm nonprofit NGO to combat terrorism and promote global security. Its proprietary Strategist Predictive AI aggregates and analyzes vast data from diverse sources—news, social media, and intelligence feeds—to generate real-time news, predictions, and insights. Focused on preventing terror acts and supporting Israel and Jewish values, it operates independently, free from external agendas, and serves as a vital tool for safer communities in NATO states and allied nations.
-## Features
+# TERROR ALARM - Predictive Analytics AI 
 
+## Features
 - Data collection from social media, mainstream media, and other sources
 - Analysis of collected data using NLP and Bayesian inference
 - Prediction of terrorist activities and threats
@@ -10,6 +8,7 @@
 - Generation of reports and alerts
 - Psychological operations capabilities
 - Simulated consciousness for human-like behavior
+
 
 ## Overview
 Terror Alarm is the world’s first “Strategist” and “anti-terror” agentic predictive AI that covers News and creates Views for countries and regions. The proprietary AI developed for each country - aggregates all news from all media sources including news websites, blogs, the Deep Web, the Dark Web, Social Media (X, Telegram, Reddit, Facebook, Instagram, YouTube, TikTok, Bluesky, Threats), newspapers, magazines, TV channels, radio stations and when legally possible, private messages between people. The AI also monitors data from internet-of-things devices, leaked Emails and data, and it uses data from intercepted communications legally obtained and shared by intelligence services.
@@ -41,10 +40,6 @@ git clone https://github.com/TerrorAlarm/ai
 2. Install the package:
 ```bash
 pip install -e .
-```
-
-Alternatively, you can install directly from the package:
-```bash
 ```
 
 ## Usage
