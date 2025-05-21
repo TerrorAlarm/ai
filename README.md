@@ -13,14 +13,6 @@
 ## Overview
 Terror Alarm is the world’s first “Strategist” and “anti-terror” agentic predictive AI that covers News and creates Views for countries and regions. The proprietary AI developed for each country - aggregates all news from all media sources including news websites, blogs, the Deep Web, the Dark Web, Social Media (X, Telegram, Reddit, Facebook, Instagram, YouTube, TikTok, Bluesky, Threats), newspapers, magazines, TV channels, radio stations and when legally possible, private messages between people. The AI also monitors data from internet-of-things devices, leaked Emails and data, and it uses data from intercepted communications legally obtained and shared by intelligence services.
 
-## Key features:
-- Data collection from X and other platforms
-- Text preprocessing and feature extraction
-- Custom Decision Tree implementation
-- Confidence scoring and prediction explanations
-- Batch processing capabilities
-- Comprehensive API for integration
-
 ## Installation
 
 ### Requirements
@@ -164,4 +156,4 @@ The license for Terror Alarm's Strategist Predictive AI is private. Any use, rep
 
 ## Contact
 
-For more information, contact Terror Alarm at info@terroralarm.org.
+For more information, contact Terror Alarm at info@terroralarm.org. Visit our X account for live coverage of world threats and predictions using this AI: x.com/Terror_Alarm
